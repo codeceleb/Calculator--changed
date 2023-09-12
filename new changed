@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Calculator</title>
+
+    <!-- For styling -->
+    <style>
+        table {
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            padding: 20px 40px;
+            background-color: green;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer; /* Add cursor pointer for buttons */
+        }
+
+        input[type="text"] {
+            padding: 20px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box; /* Ensure padding doesn't affect width */
+        }
+
+        /* Improve button layout */
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Create table -->
+    <table id="calcu">
+        <tr>
+            <td colspan="4">
+                <input type="text" id="result">
+            </td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="7"></td>
+            <td><input type="button" value="8"></td>
+            <td><input type="button" value="9"></td>
+            <td><input type="button" value="/" style="background-color: orange;"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4"></td>
+            <td><input type="button" value="5"></td>
+            <td><input type="button" value="6"></td>
+            <td><input type="button" value="*" style="background-color: orange;"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1"></td>
+            <td><input type="button" value="2"></td>
+            <td><input type="button" value="3"></td>
+            <td><input type="button" value="-" style="background-color: orange;"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0"></td>
+            <td><input type="button" value="."></td>
+            <td><input type="button" value="=" style="background-color: blue; color: white;"></td>
+            <td><input type="button" value="+" style="background-color: orange;"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="button" value="C" style="background-color: red;"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
